@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKLIST APP</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i>  MY <span class="text-primary">BOOK</span>LIST APP
+        </h1>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text"  id="title" class="form-control" autofocus="on" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text"  id="author" class="form-control" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="isbn">Isbn</label>
+                <input type="text"  id="isbn" class="form-control" autocomplete="off">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-stripped mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>TITLE</th>
+                    <th>AUTHOR</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="bookList.js"></script>
+</body>
+</html>
